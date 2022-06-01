@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.navbar-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+
+
+li {
+    margin: 1rem;
+    color: white;
+
+}
+
+span {
+    color: white;
+}
+
+#presentation {
+    position: relative;
+}
+
+#PourringGlass {
+    width: 100%;
+}
+
+#presentation i {
+    position: absolute;
+    font-size: 5rem;
+    color: white;
+    bottom: 4%;
+    left: 50%;
+    transform: translate(0, -50%);
+    animation: myAnim 2s ease 0s infinite alternate forwards;
+
+}
+
+
+@keyframes myAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hidden {
+    display: none;
+}
